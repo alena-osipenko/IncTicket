@@ -5,9 +5,6 @@ require('dotenv').config();
 // Require keystone
 var keystone = require('keystone');
 var Twig = require('twig');
-var keystone = require('keystone'); 
-var mongoose = keystone.mongoose; 
-var Schema = mongoose.Schema;
 
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
