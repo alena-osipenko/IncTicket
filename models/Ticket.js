@@ -6,7 +6,7 @@ searchFields: 'description',
 });
 
 Ticket.add({
-title: { type: String, initial: true, default: '', required: true },
+title: { type: String, initial: true, default: '', required: true, text: true },
 description: { type: Types.Textarea },
 priority: { type: Types.Select, options: 'Low, Medium, High', default: 'Low' },
 

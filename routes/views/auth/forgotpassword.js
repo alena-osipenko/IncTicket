@@ -22,7 +22,7 @@ view.on('post', function(next) {
         user.resetPasswordKey = keystone.utils.randomString([16,24]);
         user.save(function(err) {
             if (err) return next(err);
-            new keystone.Email({'templateName': 'forgotpassword', 'templateExt': 'swig'}).send({
+            new keystone.Email({'templateName': 'forgotpassword', 'templateExt': 'twig'}).send({
                 user: user,
                 link: '/resetpassword/' + user.resetPasswordKey,
                 subject: 'Reset your Password',
